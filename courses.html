@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Learn<span>Hub</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="courses.html">Courses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Our Courses</h1>
+        <p>Explore learning areas and choose what interests you.</p>
+    </section>
+
+    <section class="section">
+        <div class="card-grid">
+            <article class="card course-card">
+                <h3>Web Development</h3>
+                <p>Learn the basics of creating websites using
+                   HTML, CSS and JavaScript.</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <a class="btn" href="register.html?course=Web%20Development">
+                    Choose Course
+                </a>
+            </article>
+
+            <article class="card course-card">
+                <h3>Programming</h3>
+                <p>Understand programming concepts, problem-solving
+                   and writing computer instructions.</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <a class="btn" href="register.html?course=Programming">
+                    Choose Course
+                </a>
+            </article>
+
+            <article class="card course-card">
+                <h3>Database Management</h3>
+                <p>Learn how information is stored, organised
+                   and managed using databases.</p>
+                <p><strong>Level:</strong> Intermediate</p>
+                <a class="btn" href="register.html?course=Database%20Management">
+                    Choose Course
+                </a>
+            </article>
+
+            <article class="card course-card">
+                <h3>Computer Networks</h3>
+                <p>Explore how computers communicate and share
+                   information through networks.</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <a class="btn" href="register.html?course=Computer%20Networks">
+                    Choose Course
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Course Comparison Table</h2>
+        <p>Below is a summary of the courses available on LearnHub.</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Level</th>
+                        <th>Main Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Beginner</td>
+                        <td>Website Design</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Beginner</td>
+                        <td>Problem Solving</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>Intermediate</td>
+                        <td>Data Organisation</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>Beginner</td>
+                        <td>Communication</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> LearnHub. All rights reserved.</p>
+    <p>Learning today, building tomorrow.</p>
+</footer>
+
+</body>
+</html>

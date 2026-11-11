@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Learn<span>Hub</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a class="active" href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Join LearnHub</h1>
+        <p>Complete the form below to register your interest in learning.</p>
+    </section>
+
+    <section class="section">
+        <form id="registrationForm" class="form-card">
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName"
+                       placeholder="Enter your full name" required minlength="3">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9+() -]{7,20}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course of Interest</label>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Database Management">Database Management</option>
+                    <option value="Computer Networks">Computer Networks</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="goal">Why would you like to learn this course?</label>
+                <textarea id="goal" name="goal" rows="4"
+                          placeholder="Tell us briefly about your learning goals"></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I confirm that the information provided is correct.</label>
+            </div>
+
+            <button type="submit" class="btn">Submit Registration</button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> LearnHub. All rights reserved.</p>
+    <p>Learning today, building tomorrow.</p>
+</footer>
+
+</body>
+</html>
